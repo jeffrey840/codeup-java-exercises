@@ -13,6 +13,10 @@ public class HelloWorld {
         String myString = "Here is my string";
         System.out.println(myString);
 
+        long myNumber = 123;
+        System.out.println(myNumber);
+
+
 
 
 
