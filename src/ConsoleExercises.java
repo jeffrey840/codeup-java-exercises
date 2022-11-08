@@ -13,10 +13,11 @@ public class ConsoleExercises {
         System.out.format("%s%s%n", piStat, pi);
 
         Scanner scanner = new Scanner(System.in);
-//      scanner.useDelimiter("\n");
+        scanner.useDelimiter("\n");
         System.out.println("Enter an integer: ");
         int nextInt = scanner.nextInt();
         System.out.println(nextInt);
+
 
         System.out.println("Enter a word: ");
         String firstWord = scanner.next();
@@ -24,8 +25,12 @@ public class ConsoleExercises {
         String secondWord = scanner.next();
         System.out.println("Enter a final word: ");
         String thirdWord = scanner.next();
-        System.out.printf("%n%s %n%s %n%s", firstWord, secondWord, thirdWord);
+        System.out.printf("%n%s %n%s %n%s\n", firstWord, secondWord, thirdWord);
 
+
+        System.out.println("Enter a sentence: ");
+        String userInput = scanner.next();
+        System.out.println(userInput);
 
 
     }
