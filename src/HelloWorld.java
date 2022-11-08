@@ -41,8 +41,21 @@ public class HelloWorld {
 //        returns error : java: incompatible types: java.lang.String cannot be converted to int.
 //        int three = (int) "three";
 
+        int a = 4;
+        a += 5;  /* a = a + 5; */
+        System.out.println(a);
 
+        int b = 3;
+        int y = 4;
+        y *= b; /* y = y * b; */
+        System.out.println(y);
 
+        int o = 10;
+        int k = 2;
+        o /= k; /* o = o / k;  5 is now stored in 'o'   */
+        k -= o; /* k = k - o; */
+        System.out.println(o);
+        System.out.println(k);
 
 
     }
