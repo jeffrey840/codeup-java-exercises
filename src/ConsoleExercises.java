@@ -33,6 +33,19 @@ public class ConsoleExercises {
         System.out.println(userInput);
 
 
+        System.out.println("Calculate the perimeter and area of this room.");
+        System.out.println("Enter the length of the room: ");
+        int length = scanner.nextInt();
+        System.out.println("Enter the width of the room: ");
+        int width = scanner.nextInt();
+        System.out.println("Enter the height of the room: ");
+        int height = scanner.nextInt();
+
+        System.out.println("The perimeter of the room is " + (length * 2 + width * 2));
+        System.out.println("The area of the room is " + (length * width));
+        System.out.println("The volume of the room is " + (length * width * height));
+
+        System.out.println(Long.MAX_VALUE);
     }
 
 }
