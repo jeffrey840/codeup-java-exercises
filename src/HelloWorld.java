@@ -58,6 +58,10 @@ public class HelloWorld {
         System.out.println(k);
 
 
+        int m = Integer.MAX_VALUE;
+        System.out.println(m);/* 2147483647 */
+        m += 1;
+        System.out.println(m);/* -2147483648 */
     }
 
 
