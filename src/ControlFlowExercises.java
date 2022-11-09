@@ -130,17 +130,6 @@ public class ControlFlowExercises {
 //        }
 
 
-
-
-    }
-
-}
-
-
-//=================
-
-
-
 //        Convert given number grades into letter grades.
 //
 //        Prompt the user for a numerical grade from 0 to 100.
@@ -155,8 +144,49 @@ public class ControlFlowExercises {
 //        C : 79 - 67
 //        D : 66 - 60
 //        F : 59 - 0
+
 //        Bonus
-//
 //        Edit your grade ranges to include pluses and minuses (ex: 99-100 = A+).
+
+        System.out.println("Enter a numerical grade value from 0 to 100");
+        int userGrade = scanner.nextInt();
+        System.out.println("Would you like to see your letter grade?  Please enter 'Yes' or 'No'");
+        String Continue = scanner.next().toLowerCase();
+        if (Continue.equals("yes")) {
+            if (userGrade > 97) {
+                System.out.println("Your grade is an A+");
+            } else if (userGrade > 93) {
+                System.out.println("Your grade is an A");
+            } else if (userGrade > 89) {
+                System.out.println("Your grade is an A-");
+            } else if (userGrade > 87) {
+                System.out.println("Your grade is a B+");
+            } else if (userGrade > 83) {
+                System.out.println("Your grade is a B");
+            } else if (userGrade > 79) {
+                System.out.println("Your grade is a B-");
+            } else if (userGrade > 77) {
+                System.out.println("Your grade is a C+");
+            } else if (userGrade > 73) {
+                System.out.println("Your grade is a C");
+            } else if (userGrade > 69) {
+                System.out.println("Your grade is a C-");
+            } else if (userGrade > 67) {
+                System.out.println("Your grade is a D+");
+            } else if (userGrade > 63) {
+                System.out.println("Your grade is a D");
+            } else if (userGrade > 59) {
+                System.out.println("Your grade is a D-");
+            } else {
+                System.out.println("Your grade is an F");
+            }
+        } else {
+            System.out.println("Ok have a great day");
+        }
+    }
+
+    }
+
+
 
 
