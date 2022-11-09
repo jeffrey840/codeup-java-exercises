@@ -82,7 +82,6 @@ public class ControlFlowExercises {
 //        For multiples of three: print “Fizz” instead of the number.
 //        For the multiples of five: print “Buzz”.
 //        For numbers which are multiples of both three and five: print “FizzBuzz”.
-//        Display a table of powers.
 
 
 //            for(int i = 1; i<=100; i++) {
@@ -98,17 +97,8 @@ public class ControlFlowExercises {
 //        }
 //
 
+//        Display a table of powers.
 
-
-    }
-
-}
-
-
-//=================
-
-
-//
 //        Prompt the user to enter an integer.
 //        Display a table of squares and cubes from 1 to the value entered.
 //        Ask if the user wants to continue.
@@ -128,6 +118,29 @@ public class ControlFlowExercises {
 //        3      | 9       | 27
 //        4      | 16      | 64
 //        5      | 25      | 125
+
+//        System.out.print("Enter and integer: ");
+//        int num = scanner.nextInt();
+//        System.out.println("Here is your table!\n" +
+//                "\n" +
+//                "number | squared | cubed\n" +
+//                "------ | ------- | -----");
+//        for(int i = 1; i <= num;   i++){
+//            System.out.println("" +i+"     | "+i*i+"       | "+i*i*i+"    \n");
+//        }
+
+
+
+
+    }
+
+}
+
+
+//=================
+
+
+
 //        Convert given number grades into letter grades.
 //
 //        Prompt the user for a numerical grade from 0 to 100.
