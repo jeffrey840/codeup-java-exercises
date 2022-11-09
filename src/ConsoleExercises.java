@@ -11,14 +11,16 @@ public class ConsoleExercises {
         double pi = 3.14159;
         String piStat = "The value of pi is approximately ";
         System.out.format("%s%s%n", piStat, pi);
-
+//    Explore the Scanner Class.
+//        Prompt a user to enter a integer and store that value in an int variable using the nextInt method.
         Scanner scanner = new Scanner(System.in);
         scanner.useDelimiter("\n");
         System.out.println("Enter an integer: ");
         int nextInt = scanner.nextInt();
         System.out.println(nextInt);
 
-
+//        What happens if you input something that is not an integer?
+//        Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
         System.out.println("Enter a word: ");
         String firstWord = scanner.next();
         System.out.println("Enter another word: ");
@@ -50,11 +52,9 @@ public class ConsoleExercises {
 
 }
 
-//    Explore the Scanner Class.
-//        Prompt a user to enter a integer and store that value in an int variable using the nextInt method.
+
 //
-//        What happens if you input something that is not an integer?
-//        Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
+
 //
 //        What happens if you enter less than 3 words?
 //        What happens if you enter more than 3 words?
