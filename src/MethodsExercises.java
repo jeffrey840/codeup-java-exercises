@@ -20,6 +20,7 @@ public class MethodsExercises {
 
         getInteger(1, 5);
         getFactorials();
+        diceRoll();
     }
 
     public static int sumOfNumbers(int num1, int num2){
@@ -127,7 +128,31 @@ public static int multiplicationOne(int num1, int num2) {
         return output;
     }
 
-
+    public static void diceRoll() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Let's roll some dice!");
+        System.out.println("Enter the number of sides for a pair of dice.");
+        int numberOfSides = sc.nextInt();
+        while (true) {
+            System.out.println("Type 'roll' to roll your dice.");
+            String roll = sc.next().toLowerCase();
+            if (roll.equals("roll")) {
+                while (true) {
+                    System.out.println("Die 1: " + ((int) Math.floor(Math.random() * (numberOfSides)) + 1));
+                    System.out.println("Die 2: " + ((int) Math.floor(Math.random() * (numberOfSides)) + 1));
+                    System.out.println("Would you like to roll again? (y/n)");
+                    String again = sc.next().toLowerCase();
+                    if (again.equals("n")) {
+                        break;
+                    }
+                }
+            } else {
+                continue;
+            }
+            System.out.println("Thanks for playing!");
+            break;
+        }
+    }
 
 
 }
