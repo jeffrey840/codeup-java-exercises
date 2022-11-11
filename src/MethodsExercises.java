@@ -19,6 +19,7 @@ public class MethodsExercises {
         System.out.println("Multiplication Recursion result: " + multiplicationRecursionT(4, 4));
 
         getInteger(1, 5);
+        getFactorials();
     }
 
     public static int sumOfNumbers(int num1, int num2){
@@ -89,7 +90,42 @@ public static int multiplicationOne(int num1, int num2) {
 
     }
 
+    public static String getFactorials(){
+        Scanner input = new Scanner(System.in);
 
+        String keepGoing = "y";
+
+        int userInput = getInteger(1, 10);
+        String output = "";
+        for (int i = 1; i <= userInput; i++) {
+            output += getFactorials(i);
+        }
+        System.out.println(output);
+        System.out.println("Keep Going? Y/N");
+        keepGoing = input.nextLine();
+
+        if(keepGoing.equalsIgnoreCase("y")){
+            getFactorials();
+        }else {
+            System.out.println("Later");
+        }
+        return "";
+    }
+
+    public static String getFactorials(int num){
+        String output = num + "! = ";
+        long fact = 1L;
+        for (int i = 1; i <= num; i++){
+            output += " X " + i;
+            fact *= i;
+        }
+        if(num == 10){
+            output = output.substring(0, 5) + output.substring(8) + " = " + fact +"\n";
+        }else{
+            output = output.substring(0, 5) + output.substring(7) + " = " + fact +"\n";
+        }
+        return output;
+    }
 
 
 
