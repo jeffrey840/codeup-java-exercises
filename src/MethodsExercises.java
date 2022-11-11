@@ -9,7 +9,9 @@ public class MethodsExercises {
         System.out.println("multiplication result " + multiply(15, 3));
         System.out.println("division result " + divide(25, 5));
         System.out.println("modulus result " + modulus(13, 3));
-        count(5);
+        System.out.println("Multiplication result: " + multiplicationOne(5, 2));
+        System.out.println("Multiplication result: " + multiplicationTwo(5, 4));
+
     }
 
     public static int sumOfNumbers(int num1, int num2){
@@ -31,24 +33,23 @@ public class MethodsExercises {
         return num1 % num2;
     }
 
-    public static void count(int n) {
-        if (n <= 0) {
-            System.out.println("All done!");
-            return;
-        }
-        System.out.println(n);
-        count(n - 1);
+//===================BONUS===================//
+
+public static int multiplicationOne(int num1, int num2) {
+    int initialValue = num1;
+    for (int i = 1; i < num2; num2--) {
+        num1 += initialValue; /* num1 = num1 + initialValue */
     }
+    return num1;
+}
 
-
-
-
-
-
-
-
-
-
+    public static int multiplicationTwo(int num1, int num2) {
+        int product = 0;
+        for (int i = 0; i < num2; i++) {
+            product += num1;/* num1 = num1 + product */
+        }
+        return product;
+    }
 
 
 
