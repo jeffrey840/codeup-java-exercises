@@ -1,3 +1,7 @@
+
+import java.util.Scanner;
+import java.lang.Math;
+
 public class MethodsExercises {
 
     public static void main(String[] args) {
@@ -14,7 +18,7 @@ public class MethodsExercises {
         System.out.println("Multiplication Recursion result: " + multiplicationRecursion(2, 2));
         System.out.println("Multiplication Recursion result: " + multiplicationRecursionT(4, 4));
 
-
+        getInteger(1, 5);
     }
 
     public static int sumOfNumbers(int num1, int num2){
@@ -66,6 +70,30 @@ public static int multiplicationOne(int num1, int num2) {
 
     }
 
+    public static int getInteger(int min, int max){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number between " + min + " and " + max + ": ");
+        int userInput;
+        if(input.hasNextInt()){
+            userInput = input.nextInt();
+        } else {
+            System.out.println("Invalid. Try again.");
+            return getInteger(min, max);
+        }
+        if (userInput < min || userInput > max){
+            System.out.println("Invalid. Try again.");
+            return getInteger(min, max);
+        }else {
+            return userInput;
+        }
+
+    }
+
+
+
+
 
 
 }
+
+
