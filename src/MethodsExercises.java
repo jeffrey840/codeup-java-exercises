@@ -9,8 +9,11 @@ public class MethodsExercises {
         System.out.println("multiplication result " + multiply(15, 3));
         System.out.println("division result " + divide(25, 5));
         System.out.println("modulus result " + modulus(13, 3));
-        System.out.println("Multiplication result: " + multiplicationOne(5, 2));
-        System.out.println("Multiplication result: " + multiplicationTwo(5, 4));
+        System.out.println("MultiplicationOne result: " + multiplicationOne(5, 2));
+        System.out.println("MultiplicationTwo result: " + multiplicationTwo(5, 4));
+        System.out.println("Multiplication Recursion result: " + multiplicationRecursion(2, 2));
+        System.out.println("Multiplication Recursion result: " + multiplicationRecursionT(4, 4));
+
 
     }
 
@@ -51,6 +54,17 @@ public static int multiplicationOne(int num1, int num2) {
         return product;
     }
 
+    public static int multiplicationRecursion(int num, int num2){
+        if(num2 <= 1) {
+            return  num;
+        } return num + multiplicationRecursion(num, num2 - 1);
+    };
+
+
+    public static int multiplicationRecursionT(int num, int num2) {
+        return num2 <= 1 ? num : num + multiplicationRecursionT(num, num2 - 1);
+
+    }
 
 
 
