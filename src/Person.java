@@ -27,6 +27,29 @@ public Person(String name) {
 
     public static void main(String[] args) {
 
+//        input 1
+//        returns true, false
+//        Person person1 = new Person("John");
+//        Person person2 = new Person("John");
+//        System.out.println(person1.getName().equals(person2.getName()));
+//        System.out.println(person1 == person2);
+
+//        input 2
+//        returns true
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1 == person2);
+
+//        input 3
+//        returns john, john, jane, jane
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
+//        person2.setName("Jane");
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
+
 
     }
 }
