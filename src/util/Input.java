@@ -9,10 +9,6 @@ public class Input {
     this.sc = new Scanner(System.in).useDelimiter("\n");
     }
 
-    public String getString() {
-        return sc.nextLine();
-    }
-
 //  Get string method asks for the user input and returns it
     public String getString(String prompt) {
         System.out.println(prompt);
@@ -22,8 +18,8 @@ public class Input {
 //  yesNo method asks the user if they want to continue y/yes = true, else false.
     public boolean yesNo() {
         String input = sc.next();
-        System.out.println(input);
-        if(input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")) {
+//        System.out.println(input);
+        if (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")) {
             return true;
         } else {
             return false;
@@ -40,13 +36,11 @@ public class Input {
         }
     }
 
-//    public int getNum() {
+//        public int getNum() {
 //        int userInt = sc.nextInt();
 //        System.out.println("You entered " + userInt);
 //        return getNum();
 //    }
-
-
 
     public double getDouble(double min, double max) {
         double userInt = sc.nextInt();
@@ -57,6 +51,20 @@ public class Input {
             return getDouble(min, max);
         }
     }
+
+    public int getDbl() {
+        double userInt = sc.nextInt();
+        System.out.println("You entered " + userInt);
+        return getDbl();
+    }
+//
+//    public int gNum() {
+//        int userInt = sc.nextInt();
+//        System.out.println("You entered " + userInt);
+//        return gNum();
+//    }
+//
+
 
 
 
@@ -75,20 +83,26 @@ public class Input {
         int numInRange = in.getInt(1, 10);
         System.out.println("You entered " + numInRange);
 
-//        System.out.print("Please enter a whole number: ");
-//        int num = in.getNum();
-//        System.out.println("You entered: " + num);
 
-        System.out.print("Please enter a whole number between 1.50 and 15.50: ");
+
+        System.out.print("Please enter a double number between 1.50 and 15.50: ");
         double dNum = (int) in.getDouble(1.50, 15.50);
         System.out.println("You entered " + dNum);
 
+        System.out.print("Please enter a double number: ");
+        double dnum = (int) in.getDbl();
+        System.out.println("You entered: " + dnum);
+
+        System.out.print("Please enter a whole number: ");
+        int num = in.gNum();
+        System.out.println("You entered: " + num);
+
+
+
+
+
+
+
     }
-
-
-
-
-
-
 
 }
