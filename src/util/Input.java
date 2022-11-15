@@ -93,9 +93,9 @@ public class Input {
         double dnum = (int) in.getDbl();
         System.out.println("You entered: " + dnum);
 
-        System.out.print("Please enter a whole number: ");
-        int num = in.gNum();
-        System.out.println("You entered: " + num);
+//        System.out.print("Please enter a whole number: ");
+//        int num = in.gNum();
+//        System.out.println("You entered: " + num);
 
 
 
