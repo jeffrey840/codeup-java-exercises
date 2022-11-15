@@ -36,14 +36,15 @@ public class Input {
         }
     }
 
-//        public int getNum() {
-//        int userInt = sc.nextInt();
-//        System.out.println("You entered " + userInt);
-//        return getNum();
-//    }
+        public int getNum() {
+        int userInt = sc.nextInt();
+        System.out.println("You entered " + userInt);
+        return getNum();
+
+    }
 
     public double getDouble(double min, double max) {
-        double userInt = sc.nextInt();
+        double userInt = sc.nextDouble();
         if (userInt >= min && userInt <= max) {
             return userInt;
         } else {
@@ -53,56 +54,12 @@ public class Input {
     }
 
     public int getDbl() {
-        double userInt = sc.nextInt();
+        double userInt = sc.nextDouble();
         System.out.println("You entered " + userInt);
         return getDbl();
     }
-//
-//    public int gNum() {
-//        int userInt = sc.nextInt();
-//        System.out.println("You entered " + userInt);
-//        return gNum();
-//    }
-//
-
-
-
-
-
-    public static void main(String[] args) {
-        Input in = new Input();
-
-        String favSentence = in.getString("Please enter your favorite sentence!");
-        System.out.println(favSentence);
-
-        System.out.print("Do you want to continue? ");
-        boolean yesNo = in.yesNo();
-        System.out.println(yesNo);
-
-        System.out.print("Please enter a whole number between 1 and 10: ");
-        int numInRange = in.getInt(1, 10);
-        System.out.println("You entered " + numInRange);
-
-
-
-        System.out.print("Please enter a double number between 1.50 and 15.50: ");
-        double dNum = (int) in.getDouble(1.50, 15.50);
-        System.out.println("You entered " + dNum);
-
-        System.out.print("Please enter a double number: ");
-        double dnum = (int) in.getDbl();
-        System.out.println("You entered: " + dnum);
-
-//        System.out.print("Please enter a whole number: ");
-//        int num = in.gNum();
-//        System.out.println("You entered: " + num);
-
-
-
-
-
-
-
-    }
 
 }
+
+
+
