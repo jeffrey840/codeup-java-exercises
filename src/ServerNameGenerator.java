@@ -24,6 +24,24 @@ public class ServerNameGenerator {
             "attractive"
     };
 
+    //    noun array
+    public static String[] nouns = {
+            "Actor",
+            "Advertisement",
+            "Airport",
+            "Ambulance",
+            "Animal",
+            "Helicopter",
+            "Planet",
+            "squadron",
+            "Plastic",
+            "Queen"
+    };
 
+    //    random element method
+    public static String randomElement(String[] array){
+        int randomIndex = new Random().nextInt(array.length);
+        return array[randomIndex];
+    }
 
 }
