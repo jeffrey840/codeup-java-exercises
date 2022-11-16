@@ -28,10 +28,6 @@ public class InputTest {
         System.out.println("You entered: " + dnum);
 
 
-
-
-
-
     }
 }
 
