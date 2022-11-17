@@ -31,7 +31,7 @@ public class Input {
         if (userInt >= min && userInt <= max) {
             return userInt;
         } else {
-            System.out.println("Please enter an integer in the correct range between " + min + " " + "and " + max);
+            System.out.println("Incorrect, Enter a whole number between:  " + min + " " + "and " + max);
             return getInt(min, max);
         }
     }
@@ -40,7 +40,6 @@ public class Input {
         int userInt = sc.nextInt();
         System.out.println("You entered " + userInt);
         return getNum();
-
     }
 
     public double getDouble(double min, double max) {
@@ -53,7 +52,8 @@ public class Input {
         }
     }
 
-    public int getDbl() {
+
+    public double getDbl() {
         double userInt = sc.nextDouble();
         System.out.println("You entered " + userInt);
         return getDbl();
