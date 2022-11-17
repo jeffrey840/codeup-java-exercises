@@ -15,9 +15,9 @@ public class InputTest {
         int numInRange = in.getInt(1, 10);
         System.out.println("You entered " + numInRange);
 
-        System.out.print("Please enter a whole number: ");
-        int num = in.getNum();
-        System.out.println("You entered: " + num);
+//        System.out.print("Please enter a whole number: ");
+//        int num = in.getNum();
+//        System.out.println("You entered: " + num);
 
         System.out.print("Please enter a double number between 1.50 and 15.50: ");
         double dNum = in.getDouble(1.50, 15.50);
@@ -26,7 +26,7 @@ public class InputTest {
         System.out.print("Please enter a double number: ");
         double dnum = in.getDbl();
         System.out.println("You entered: " + dnum);
-
+        System.exit(0);
 
     }
 }

@@ -36,18 +36,18 @@ public class Input {
         }
     }
 
-        public int getNum() {
-        int userInt = sc.nextInt();
-        System.out.println("You entered " + userInt);
-        return getNum();
-    }
+//        public int getNum() {
+//        int userInt = sc.nextInt();
+//        System.out.println("You entered " + userInt);
+//        return getNum();
+//    }
 
     public double getDouble(double min, double max) {
         double userInt = sc.nextDouble();
         if (userInt >= min && userInt <= max) {
             return userInt;
         } else {
-            System.out.println("Please enter an integer in the correct range between " + min + " " + "and " + max);
+            System.out.println("Incorrect, Enter a \"Double\" number  between:  " + min + " " + "and " + max);
             return getDouble(min, max);
         }
     }
