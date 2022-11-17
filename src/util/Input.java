@@ -36,11 +36,11 @@ public class Input {
         }
     }
 
-//        public int getNum() {
-//        int userInt = sc.nextInt();
-//        System.out.println("You entered " + userInt);
-//        return getNum();
-//    }
+        public int getNum() {
+        int userInt = sc.nextInt();
+        System.out.println("You entered " + userInt);
+        return userInt;
+    }
 
     public double getDouble(double min, double max) {
         double userInt = sc.nextDouble();
@@ -52,11 +52,10 @@ public class Input {
         }
     }
 
-
     public double getDbl() {
         double userInt = sc.nextDouble();
         System.out.println("You entered " + userInt);
-        return getDbl();
+        return userInt;
     }
 
 }
