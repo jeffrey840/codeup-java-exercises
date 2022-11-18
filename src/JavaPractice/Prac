@@ -161,3 +161,66 @@ GOODBYE!!!
 
 
     ==========================
+
+# File IO
+
+1. Files exercise
+
+    Create a `FileHandler` class in the `util` package, we will use this class
+    to handle all kinds of file operations. The class should have 2 private
+    properties: directory, filename, don't forget to handle the exceptions.
+
+    1. Create a method to create the file if it does not exist.
+    1. Create a method to create the directory if it does not exist.
+    1. Create a method for retrieving file contents as a List of Strings.
+    1. Create a method to write (append) new contents to a file. This method
+       could have an optional parameter to choose between appending the contents
+       of the file or not.
+
+    Your class should conform to the interface below:
+
+    ```java
+    interface HandlesFiles {
+        List<String> slurp(String filename);
+        void spit(String filename, List<String> contents);
+        void spit(String filename, List<String> contents, boolean append);
+    }
+    ```
+
+    Note that no IO expceptions are in the method signatures. This means your
+    implementation should handle those exceptions, and not expose them.
+
+    Create a `FileHandlerTest` class so you can test your work.
+
+    ============================
+
+
+    # Java Control Structures and Loops Bonuses
+
+    ### Simple Chat Bot
+
+    Be creative in communicating with your
+     user different options and for given scenerios. Create at three phases of the chat, for example...
+
+    			                 "How are you?" (AI says)
+    			           |                              |
+    			         good                        bad (user types)
+
+    	   "Awesome! Are you super happy?" 	    "Will cake make you better?"
+
+    	          yes          no                     yes             no
+
+    Keep the chat options relatively simple and plan it out clearly before coding it.
+
+    ### Hangman Game
+
+    - prompt a player 1 to enter a word for player 2 to guess
+    - track the number of guesses by player 2
+    - display to the user the partially completed word
+    - string methods from the lesson will be helpful for this bonus
+
+
+
+    ======================
+
+
