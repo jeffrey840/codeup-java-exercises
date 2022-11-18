@@ -26,15 +26,11 @@ public class MoviesApplication {
 
 //          calling getInt from input java
 
-
-
             int choice = test.getInt(0, 6);
-
-
-
 
             if (choice == 0) {
                 System.out.println("Bye, Bye \uD83D\uDC4B");
+                System.exit(0);
 
             } else if (choice == 1) {
                 for (int i = 0; i < movies.length; i++) {
@@ -77,10 +73,11 @@ public class MoviesApplication {
 
                 }
 
-            } System.out.println("Would you like to make more circles?(Y/N)");
+            } System.out.println("Would you like to make more selections?(Y/N)");
             result = cInfo.yesNo();
+
         } while (result);
-        System.out.println("Thanks 😄");
+        System.out.println("Bye, Bye \uD83D\uDC4B");
     }
 }
 
