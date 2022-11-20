@@ -23,9 +23,10 @@ public class DateFormatConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         scanner.useDelimiter("\n");
-        System.out.println("Enter an integer: ");
+        System.out.println("Enter a date: MM/DD/YYYY");
         String nextLn = scanner.nextLine();
-        System.out.println("MM/DD/YYYY");
+
+
     }
 
 
