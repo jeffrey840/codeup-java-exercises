@@ -8,8 +8,8 @@ public class UPrompt {
         Scanner scanner = new Scanner(System.in);
         scanner.useDelimiter("\n");
         System.out.println("How many items will be entered");
-        int answer = Integer.parseInt(scanner.nextLine().trim());
-//        System.out.println(answer);
+        int ItemsEntered = Integer.parseInt(scanner.nextLine().trim());
+
     }
 
 }

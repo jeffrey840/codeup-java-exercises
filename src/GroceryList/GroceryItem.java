@@ -18,4 +18,16 @@ public class GroceryItem {
 
 
 
+//    constructor
+    public GroceryItem(String name, Integer quantity, String category){
+        this.name = name;
+        this.quantity = quantity;
+        this.category = category;
+
+    }
+
+//    public Integer ItemsEntered() {
+//       return
+//    }
+
 }
