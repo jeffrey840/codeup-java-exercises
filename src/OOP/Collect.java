@@ -1,14 +1,12 @@
 package OOP;
-
 import java.util.Collections;
-
 import java.util.ArrayList;
+
+
 
 public class Collect {
 
     static ArrayList<Integer> numbers = new ArrayList<>();
-
-
     public static void main(String[] args) {
         numbers.add(20);    // adding an element
         numbers.add(0,21); // specifying an index
