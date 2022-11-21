@@ -16,15 +16,16 @@ import java.util.Scanner;
 * */
 public class GroceryItem {
 
-
-
-//    constructor
-    public GroceryItem(String name, Integer quantity, String category){
-        this.name = name;
-        this.quantity = quantity;
-        this.category = category;
-
-    }
+//    public String name;
+//    public String name;
+//    public String name;
+////    constructor
+//    public GroceryItem(String name, Integer quantity, String category){
+//        this.name = name;
+//        this.quantity = quantity;
+//        this.category = category;
+//
+//    }
 
 //    public Integer ItemsEntered() {
 //       return
