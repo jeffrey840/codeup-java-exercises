@@ -28,7 +28,7 @@ public Student(String name) {
     public double getGradeAverage() {
         double sum = 0;
         for (Integer grade : grades) {
-            sum += grade;
+            sum = sum + grade;
         }
         return sum/grades.size();
     }
