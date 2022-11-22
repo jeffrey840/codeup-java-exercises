@@ -1,17 +1,19 @@
 package grades;
 
+import java.util.ArrayList;
+
 public class StudentTest {
 
     public static void main(String[] args) {
 
-        Student studentA = new Student("Jeffrey");
+        Student jeff = new Student("Jeffrey",new ArrayList<>());
 
-        studentA.addGrade(100);
-        studentA.addGrade(40);
-        studentA.addGrade(30);
-        studentA.addGrade(30);
+        jeff.addGrade(100);
+        jeff.addGrade(80);
+        jeff.addGrade(60);
+        jeff.addGrade(60);
 
-        System.out.println(studentA.getGradeAverage());
+        System.out.println(jeff.getGradeAverage());
 
     }
 
