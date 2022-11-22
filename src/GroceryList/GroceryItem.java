@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /*
 * 1. Create a command line grocery list maker
-
     - before prompting the user to enter each item, ask how many items will be
       entered
     - for each item, the user should be prompted to enter in the name, quantity,
