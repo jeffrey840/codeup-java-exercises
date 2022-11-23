@@ -58,6 +58,33 @@ public class Input {
         return userInt;
     }
 
+
+//====✅✅✅✅✅✅=======EXCEPTIONS AND ERROR HANDLING========✅✅✅✅✅✅
+
+    public String getString() {
+        return sc.nextLine();
+    }
+
+    public int getInt() {
+        try {
+            return Integer.parseInt(getString());
+        } catch (NumberFormatException e) {
+            System.out.println("Incorrect type entered, please use an Integer");
+            return getInt();
+        }
+    }
+
+    public double getDouble() {
+        try {
+            return Double.parseDouble(getString());
+        } catch (NumberFormatException e) {
+            System.out.println("Incorrect type entered, please use a Double");
+            return getDouble();
+        }
+    }
+
+
+
 }
 
 
