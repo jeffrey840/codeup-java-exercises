@@ -1,10 +1,10 @@
-package OOP;
+package JavaNio;
+
 import java.nio.file.*;
 import java.nio.*;
-import java.util.Arrays;
 
-public class FileNio {
 
+public class CreateDir {
     public static void main(String[] args) {
         try {
             Path p= Paths.get("DataSet");
@@ -18,7 +18,8 @@ public class FileNio {
             e.printStackTrace();
         }
     }
-}
 
-//created a directory in codeup-java-exercise called dataset
+//created a directory in Codeup-java-exercise called dataset
+
+}
 
