@@ -1,6 +1,4 @@
 package GroceryList;
-import java.util.Arrays;
-import java.util.Scanner;
 
 /*
 * 1. Create a command line grocery list maker
@@ -13,21 +11,11 @@ import java.util.Scanner;
     - once the user has entered all items, print out all items grouped by
       category and alphabetized in each group
 * */
+
 public class GroceryItem {
-
-//    public String name;
-//    public String name;
-//    public String name;
-////    constructor
-//    public GroceryItem(String name, Integer quantity, String category){
-//        this.name = name;
-//        this.quantity = quantity;
-//        this.category = category;
-//
-//    }
-
-//    public Integer ItemsEntered() {
-//       return
-//    }
-
+    private String name;
+    private String category;
+    private int quantity;
 }
+
+
