@@ -56,17 +56,21 @@ public class GradesApplication {
 
 //          FOR LOOP
             for (Map.Entry<String, Student> set :students.entrySet()) {
+ //         DISPLAYS STUDENT USERNAMES
                 System.out.print("|" + set.getKey() + "|  ");
             }
-
+//          LOOKS FOR KEY/VALUE
             System.out.println("\n\nWhat student would you like to see more information on? (Case Sensitive)");
             System.out.print("\n>");
+//          ASSIGNS KEY/VALUE TO userInput
             String userInput = sc.nextLine();
 
 //          IF ELSE STATEMENT
+//          IF students does not contain userInput print:...
             if (!students.containsKey(userInput)) {
                 System.out.println("\nSorry, no student found with the GitHub username of " + userInput);
             } else {
+//          else prints name/github username and prints average grade
                 System.out.println("Name: " + students.get(userInput).getName() + " - GitHub Username: " + userInput);
                 System.out.println(students.get(userInput).getGradeAverage());
             }
