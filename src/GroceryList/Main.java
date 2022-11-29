@@ -24,14 +24,19 @@ public class Main {
                     groceryList.printGrocery();
                     break;
                 case 2:
+                    addItem();
                     break;
                 case 3:
+                    modify();
                     break;
                 case 4:
+                    removeItem();
                     break;
                 case 5:
+                    searchForItem();
                     break;
                 case 6:
+                    quit = true;
                     break;
             }
 
@@ -70,6 +75,19 @@ public class Main {
         scanner.nextLine();
         groceryList.removeGroceryItem(itemNo -1);
     }
+
+    public static void searchForItem() {
+        System.out.println("Item to search for :");
+        String searchItem = scanner.nextLine();
+
+        if(groceryList.findItem(searchItem) != null) {
+            System.out.println("found " + searchItem +" in grocery list ");
+        } else {
+            System.out.println(searchItem + " is not in the groceries list");
+        }
+    }
+
+
 
 
 
