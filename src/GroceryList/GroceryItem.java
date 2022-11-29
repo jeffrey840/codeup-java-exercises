@@ -18,9 +18,6 @@ public class GroceryItem {
     private String category;
 
 //    CONSTRUCTOR
-    public GroceryItem() {
-    }
-//    CONSTRUCTOR
     public GroceryItem(String name, String category, int quantity) {
         this.name = name;
         this.category = category;
