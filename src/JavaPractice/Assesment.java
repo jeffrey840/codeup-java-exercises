@@ -1,6 +1,7 @@
 package JavaPractice;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.AbstractCollection;
@@ -19,23 +20,15 @@ public class Assesment {
         System.out.println(half(12));
         System.out.println(shout("jeffrey"));
 
-
-
     }
 
+public static ArrayList<Animal> removeCats(ArrayList<Animal> cats)  {
 
-public static void removeCats () throws IOException {
-    String[] cats = {"brown", "wolfs", "dogs", "felius"};
-    List<String> Al = Arrays.asList(cats);
-
-    for(String cat : Al) {
-        if (cat.equals("felius")) {
-            Al.remove(cat);
-
+    for(Animal cat : cats) {
+        if (cat.getSpecies().equals("Felis catus")) {
+            cats.remove(cat);
         }
-    }
-    System.out.println(Al);
 
+    }return cats;
 }
-
 }
