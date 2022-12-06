@@ -6,28 +6,28 @@ public class Animal {
     private String species;
 
     // Getter
-    public String name() {
+    public String getName() {
         return name;
     }
 
     // Setter
-    public void name(String c) {
+    public void setName(String c) {
         this.name = c;
     }
 
     // Getter
-    public String species() {
+    public String getSpecies() {
         return species;
     }
 
     // Setter
-    public void species(String c) {
+    public void setSpecies(String c) {
         this.species = c;
     }
 
     public static String roar(){
-        String c = "cat";
-        return "I am " + c + ", hear me roar!";
+        String a = "cat";
+        return "I am " + a + ", hear me roar!";
     }
 
     public static void main(String[] args) {
